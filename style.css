@@ -25,3 +25,45 @@ body{
     padding: 8px;
     font-size: 1.1em;
 }
+
+#listaDeTarefas li {
+    
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+
+}
+#save{
+    background-color: white;
+    border-radius: 12px;
+    border: white 1px solid;
+    color: rgb(24, 23, 23) ;
+    padding: 7px;
+    font-size: 1.1em;
+
+}
+#save:hover{
+    background-color: rgb(24, 23, 23) ;
+    border: rgb(24, 23, 23) 1px solid;
+    color: white;
+
+}
+.span1{
+    display: inline-block;
+    min-width: 300px;
+    background-color: rgb(24, 23, 23);
+    border-radius: 12px;
+    border: rgb(24, 23, 23) 1px solid;
+    color: white;
+    padding: 8px;
+    font-size: 1.1em;
+    
+}
+.botãodelet{
+    background-color: rgb(24, 23, 23);
+    border-radius: 12px;
+    border: rgb(24, 23, 23) 1px solid;
+    color: white;
+    padding: 8px;
+    font-size: 1.1em;
+}
