@@ -25,14 +25,14 @@ function criarli(tarefa){
   let newtarefa = document.createElement("span")
   newtarefa.classList.add("span1")
   newtarefa.innerText = tarefa
-  let newspanbotão = document.createElement("span")
-  let newbotão = document.createElement("button")
-  newbotão.innerHTML = "x"
-  newbotão.setAttribute("onclick","delttarefa(this)")
-  newbotão.classList.add("botaodelet")
+  let newspanbotao = document.createElement("span")
+  let newbotao = document.createElement("button")
+  newbotao.innerHTML = "<i class ='fa fa-trash-o'></i>"
+  newbotao.setAttribute("onclick","delttarefa(this)")
+  newbotao.classList.add("botaodelet")
   li.appendChild(newtarefa)
-  li.appendChild(newspanbotão)
-  newspanbotão.appendChild(newbotão)
+  li.appendChild(newspanbotao)
+  newspanbotao.appendChild(newbotao)
   return li
 
 }
