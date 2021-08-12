@@ -19,16 +19,6 @@ function criartarefa(){
   inputarefa.value = ""
   storage()
   }
-  
-  function storage(){
-    let ul = listaDeTarefas.innerHTML
-    localStorage.setItem("lista", ul)
-    
-  }
-  
-  
-  
-
 }
 function criarli(tarefa){
   let li = document.createElement("li")
@@ -38,8 +28,8 @@ function criarli(tarefa){
   let newspanbotão = document.createElement("span")
   let newbotão = document.createElement("button")
   newbotão.innerHTML = "x"
-  newbotão.addEventListener("click",delttarefa)
-  newbotão.classList.add("botãodelet")
+  newbotão.setAttribute("onclick","delttarefa(this)")
+  newbotão.classList.add("botaodelet")
   li.appendChild(newtarefa)
   li.appendChild(newspanbotão)
   newspanbotão.appendChild(newbotão)
@@ -61,23 +51,25 @@ function apagar(){
 
 
   onload = function (){
- 
-    let ls = localStorage.getItem("lista")
     
-    listaDeTarefas.innerHTML = ls
+    let ls = localStorage.getItem("lista")
+        listaDeTarefas.innerHTML = ls
 
 }
-function delttarefa(){
-  let element = this.parentElement
+function delttarefa(e){
+  let element = e.parentElement
   let task = element.parentElement
   listaDeTarefas.removeChild(task)
+  storage()
   
 
 }
- 
+function storage(){
+  let ul = listaDeTarefas.innerHTML
+  localStorage.setItem("lista", ul)
+  
+}
 
 
 
 
-// <li><span class="span1">hjkljhxzklkl</span>
-// <span><button class="botãodelet">x</button></span></li>

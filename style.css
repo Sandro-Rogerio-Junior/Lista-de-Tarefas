@@ -72,7 +72,7 @@ hr{
     margin-bottom: 10px;
     
 }
-.botãodelet{
+.botaodelet{
     display: inline-block;
     background-color: white;
     border-radius: 20px;
@@ -86,7 +86,7 @@ hr{
     margin-bottom: 10px;
     text-align: center;
 }
-.botãodelet:hover{
+.botaodelet:hover{
     background-color: rgb(24, 23, 23) ;
     border: rgb(24, 23, 23) 1px solid;
     color: white;
