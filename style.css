@@ -26,6 +26,7 @@ body{
     padding: 8px;
     font-size: 1.1em;
     margin-left: 20px;
+    outline:none
 }
 
 #listaDeTarefas li {
@@ -37,15 +38,15 @@ body{
 }
 #save{
     background-color: white;
-    border-radius: 12px;
+    border-radius: 50px;
     border: white 1px solid;
     color: rgb(24, 23, 23) ;
     padding: 7px;
     font-size: 1.5em;
     margin-left: 7px;
-    height: 43px;
-    width: 35px;
-
+    height: 40px;
+    width: 40px;
+    
 }
 #save:hover{
     background-color: rgb(24, 23, 23) ;
@@ -94,14 +95,14 @@ hr{
 }
 #del{
         background-color: white;
-        border-radius: 12px;
+        border-radius: 50px;
         border: white 1px solid;
         color: rgb(24, 23, 23) ;
         padding: 7px;
-        font-size: 1.5em;
+        font-size: 1.3em;
         margin-left: 7px;
-        height: 43px;
-        width: 35px;
+        height: 40px;
+        width: 40px;
     
   
 }
