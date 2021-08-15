@@ -5,19 +5,27 @@ body{
     font-size: 1rem;
 }
 #container{
+    display:flex;
+    flex-direction: column;
+   align-items: center;  
    margin: auto;
    margin-top: 10px;
    background-color: rgb(49, 53, 53);
    font-family: Arial, Helvetica, sans-serif;
    color: white;
    max-width: 550px;
+   min-width: 300px;
    min-height: 200px;
-   text-align: center;
    border-radius: 12px;
-   padding: 5px;
+   
 
 }
+#top{
+    display: flex;
+    justify-content: space-evenly;
+}
 #inputarefa{
+    flex-grow: 1;
     width: 300px;
     background-color: rgb(24, 23, 23);
     border-radius: 12px;
@@ -28,13 +36,19 @@ body{
     margin-left: 20px;
     outline:none
 }
+#listaDeTarefas{
+    margin-left: 0px;
+    padding: 0px;
+}
 
 #listaDeTarefas li {
     
     list-style-type: none;
     padding: 0px;
     margin: 0px;
-
+    
+    
+    
 }
 #save{
     background-color: white;
@@ -62,14 +76,13 @@ hr{
 .span1{
     display: inline-block;
     min-width: 300px;
-    max-width: 300px;
     background-color: rgb(24, 23, 23);
     border-radius: 12px;
     border: rgb(24, 23, 23) 1px solid;
     color: white;
     padding: 8px;
     font-size: 1.3em;
-    margin-right: 16px;
+    text-align: center;
     margin-bottom: 10px;
     
 }
@@ -83,7 +96,7 @@ hr{
     font-size: 1.2em;
     height: 36px;
     width: 36px;
-    margin-right: 26px;
+    margin-left: 10px;
     margin-bottom: 10px;
     text-align: center;
 }
