@@ -69,31 +69,36 @@ background-color: rgb(24, 23, 23) ;
 border: rgb(24, 23, 23) 1px solid;
 color: white;
 }
-
-#listaDeTarefas li {
-    
-    list-style-type: none;
-    padding: 0px;
-    margin: 0px;
-
-}
-
 hr{
     margin-top: 20px;
     margin-bottom: 20px;
     width: 90%;
 }
+
+#listaDeTarefas {
+    
+    list-style-type: none;
+    margin: auto;
+    padding: 0px;
+    
+
+}
+#listaDeTarefas li{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    width: 90%;
+    
+}
 .span1{
-    display: inline-block;
-    min-width: 300px;
-    max-width: 300px;
+    width: 70%;
     background-color: rgb(24, 23, 23);
     border-radius: 12px;
     border: rgb(24, 23, 23) 1px solid;
     color: white;
     padding: 8px;
     font-size: 1.3em;
-    margin-right: 16px;
+    margin-right: 7px;
     margin-bottom: 10px;
     
 }
@@ -107,9 +112,6 @@ hr{
     font-size: 1.2em;
     height: 36px;
     width: 36px;
-    margin-right: 26px;
-    margin-bottom: 10px;
-    text-align: center;
 }
 .botaodelet:hover{
     background-color: rgb(24, 23, 23) ;
